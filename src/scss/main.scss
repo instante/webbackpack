@@ -1,0 +1,33 @@
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+$color-proofreason-lightblue: #4dbbeb;
+
+.demo-heading {
+    color: $color-proofreason-lightblue;
+}
+
+.bulb {
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 16px;
+    &:after {
+        position: absolute;
+        content: ' ';
+        display: block;
+        top: 12px;
+        left: 6px;
+        width: 4px;
+        height: 8px;
+        background: #000;
+    }
+    &.active {
+        background: #ff0;
+        &:after {
+            background: #ff0;
+        }
+    }
+}
